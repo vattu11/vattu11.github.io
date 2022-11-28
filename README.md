@@ -7,7 +7,7 @@
 </head>
 <body>
   <body style="background-color:rgb(0,0, 0);">
-  <h> Kuva style="rgb:(0,0, 0);" </h>
+  <h1 font-family=Times New Roman (serif) style="color:rgb(0,0, 0);">Kuva</h1>
   <img src="download.jpg">
   <p style="color:rgb(255,255, 255);">https://www.lamborghini.com/en-en </p>
     
