@@ -2,3 +2,5 @@
 <video idth="200" height="200" src="Veigar penta.webm" controls></video>
 
 <button> Home</button>
+
+<button onclick="myFunction()">Click here!</button>
