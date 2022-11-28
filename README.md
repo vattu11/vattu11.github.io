@@ -11,7 +11,7 @@
   <img src="download.jpg">
   <p style="color:rgb(255,255, 255);">https://www.lamborghini.com/en-en </p>
     
-<button type="button" style="color:rgb(255,255, 255);" onclick="alert('Toimii!')">Paina</button>
+<button type="button" style="color:rgb(0,0, 0);" onclick="alert('Toimii!')">Paina</button>
                        
-<p style="color:Tomato;">Kappale</p>
+<p style="color:rgb(10,43,64);">Kappale</p>
 <p>jotain tekstiäö</p>
