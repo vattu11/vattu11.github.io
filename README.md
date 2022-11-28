@@ -1,10 +1,16 @@
 # vattu11.github.io
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>Otsikko</title>
+
+
+  
+
 </head>
 <body>
+  <h2> Kuva</h2>
+  <img src=>
 
 <h1>Kappale</h1>
 <p>jotain tekstiäö</p>
