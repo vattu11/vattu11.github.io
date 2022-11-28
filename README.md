@@ -1,4 +1,4 @@
 
-<h1 style="font-family:verdana" style="font-size:30px" style="color:red"> PENTA KILL </h1>
-<video src="Veigar penta.webm" controls></video>
+<h1 style="font-family:verdana" style="font-size:30px" style="color:red"> PENTAKILL </h1>
+<video idth="200" height="200" src="Veigar penta.webm" controls></video>
 
