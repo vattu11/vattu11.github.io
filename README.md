@@ -11,5 +11,5 @@
     
 <button type="button" style="color:rgb(0,0, 0);" onclick="alert('Toimii!')">Paina</button>
                        
-<p style="color:rgb(10,43,64);">Kappale</p>
-<p>jotain tekstiäö</p>
+<p style="color:rgb(10,43,64);" style="font-size 40px;">Kappale</p>
+<p style="color:rgb(0,0,0);"> jotain tekstiäö</p>
