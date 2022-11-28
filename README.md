@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 # vattu11.github.io
 
-<!DOCTYPE html>
+
 <html>
 <head>
 
