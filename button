@@ -1,0 +1,7 @@
+let buttonHome = document.querySelector(".button-home");
+let CountButtonHomeClicks = 0;
+
+buttonHome.addEventListener("click", function() {
+  CountButtonHomeClicks += 1;
+  console.log(CountButtonHomeClicks);
+});
