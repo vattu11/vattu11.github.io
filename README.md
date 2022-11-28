@@ -9,3 +9,15 @@
 <p>
     Button Clicked <span 
     id="display">0</span> Times
+</p>
+  
+<script type="text/javascript">
+        var count = 0;
+        var btn = document.getElementById("display");
+        var disp = document.getElementById("display");
+
+        btn.onclick = function () {
+            count++;
+            disp.innerHTML = count;
+        }
+    </script>
