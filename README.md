@@ -1,4 +1,4 @@
-<!DOCTYPE html>                    
+               
 <html>
 <head>
 
@@ -6,6 +6,7 @@
 
 </head>
 <body>
+  <body style="background-color:rgb(0,0, 0);">
   <h2> Kuva</h2>
   <img src="download.jpg">
   <p> https://www.lamborghini.com/en-en
@@ -14,6 +15,3 @@
                        
 <h1 style="color:Tomato;">Kappale</h1>
 <p>jotain tekstiäö</p>
-
-</body>
-</html>
