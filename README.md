@@ -2,12 +2,10 @@
 <html>
 <head>
 
-  
-
 </head>
 <body>
   <body style="background-color:rgb(0,0, 0);">
-  <h1 font-family=Times New Roman (serif) style="color:rgb(0,0, 0);">Kuva</h1>
+  <h1 style="font-size:30vwx;" style="color:rgb(0,0, 0);">Kuva</h1>
   <img src="download.jpg">
   <p style="color:rgb(255,255, 255);">https://www.lamborghini.com/en-en </p>
     
