@@ -10,11 +10,13 @@ body {
 .top {
     display: flex;
     align-items: center;
-    justify-content: center; /* Add this */
+    justify-content: center; 
     width: 100%;
     background-color: black;
     color: white;
-    position: relative; /* Add this */
+    position: fixed;
+    top: 0; 
+    z-index: 10;
 }
 
 h1 {
@@ -23,8 +25,8 @@ h1 {
 }
 
 .toggleMode {
-    position: absolute; /* Add this */
-    right: 10px; /* Add this */
+    position: absolute; 
+    right: 10px; 
 }
 
 
