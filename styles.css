@@ -104,14 +104,15 @@ h4 {
 .row {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .projectlink {     
         color: white;
         text-decoration: none;
         display: block; 
-        width: 30%;
-        margin: 0% 2%;
+        width: 20%;
+        margin: 1%;
         border-radius: 20px;
         text-align: center;
         border: 40px solid rgb(50, 50, 50);             
