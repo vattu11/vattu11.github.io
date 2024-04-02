@@ -1,0 +1,67 @@
+
+    h1 {
+        font-size: 100%;
+    }
+
+    .text {
+        font-size: 70%;
+    }
+    
+    .floating-card {
+        width: 40%;
+        margin-top: 15%;
+        padding: 10%;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    .github {
+        width: 30%;
+    }
+
+    h4 {
+        font-size: 150%;
+        padding: 10%;
+    }
+
+    .toggleMode {
+        padding: 10px;
+        width: 40px;
+    }
+
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -20%;
+    }
+
+    .projectlink {
+        margin-top: 10%;
+        font-size: 75%;
+    }
+
+
+
+    .toggleMode input.mobileToggle + label {
+        height: 20px;
+        width: 40px;
+    }
+
+    .toggleMode input.mobileToggle + label:before {
+        height: 20px;
+        width: 41px;
+    }
+
+    .toggleMode input.mobileToggle + label:after {
+        height: 18px;
+        width: 18px;
+    }
+
+    .toggleMode input.mobileToggle:checked + label:after {
+        left: 20px;
+    }
+
+
