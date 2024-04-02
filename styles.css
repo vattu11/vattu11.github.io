@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: center; 
     width: 100%;
-    background-color: black;
+    background-color: rgb(50, 50, 50);
     color: white;
     position: fixed;
     top: 0; 
@@ -35,7 +35,7 @@ h1 {
 
     width: 15%;
     padding: 6%;
-    background-color: black;
+    background-color: rgb(50, 50, 50);
     border-radius: 20%;
     margin: 7% auto;
 }   
@@ -110,13 +110,12 @@ h4 {
         color: white;
         text-decoration: none;
         display: block; 
-        width: fit-content; 
-        height: fit-content;
+        width: 30%;
         margin: 0% 2%;
-        border-radius: 999px;
+        border-radius: 20px;
         text-align: center;
-        border: 40px solid #000000;             
-        background-color: black;    
+        border: 40px solid rgb(50, 50, 50);             
+        background-color: rgb(50, 50, 50);
 }
 
 .projectlink:hover {
@@ -148,7 +147,7 @@ h4 {
 
 .dark-mode {
     color: white;
-    background-color: black;
+    background-color: rgb(26, 26, 26)
 
 }
 
@@ -164,30 +163,28 @@ h4 {
 .dark-mode .top,
 .dark-mode a
 {
-    color: black;
-    background-color: white;
-    border-color: white;
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 50, 50);
+    border-color: rgb(50, 50, 50);
 }
 
 
 .dark-mode .logo1{
     
-    background-color: white;
-    color: black;
+    background-color: transparent;
     display: none;
 }
 
 .dark-mode .logo2{
     
-    background-color: white;
-    color: black;
+    border-radius: 100%;
     display: flex;
 }
 
 .dark-mode .block {
     border: 15px solid white;
     background-color: white;
-    color: black;
+    color: rgb(80, 80, 80);
 }
 
 /* Button styling used https://codepen.io/Pinjasaur/pen/KqNqLa as layout */
@@ -246,7 +243,7 @@ h4 {
   }
   
   .toggleMode input.mobileToggle:checked + label:before {
-    background: black;
+    background: rgb(57, 57, 57);
     transition: width .2s cubic-bezier(0, 0, 0, .1);
   }
   
