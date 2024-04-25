@@ -159,13 +159,14 @@ function printImages(urls) {
 
 
 
+
 // Fetch and display the images as the page is opened so its not empty at start
 fetchImages(url, 20)
     .then(urls => printImages(urls))
     .catch(error => console.log(error));
 
 // Button to load more images
-document.querySelector('button').addEventListener('click', function() {
+document.querySelector('.btn').addEventListener('click', function() {
     fetchImages(url, 20)
         .then(urls => printImages(urls))
         .catch(error => console.log(error));
