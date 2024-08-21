@@ -1,85 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px)" href="mobile.css"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=teachers:700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.bunny.net/css?family=fredoka:400|golos-text:400"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="only screen and (max-width: 480px)"
+      href="mobile.css"
+    />
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
 
+  <body>
+    <!-- Welcome text and image-->
 
-    <div class="top">
-        <h1>Welcome to my web page</h1>
-        <div class="toggleMode">
-            <input type="checkbox" name="toggle2" class="mobileToggle" id="toggle2" onclick='ThemeToggle()'>
-            <label for="toggle2"></label>
-          </div>
+    <div class="welcome-banner">
+      <div id="dialog2" class="triangle_down1"></div>
+      <img src="images/mountain.jpg" alt="banner" class="banner-img" />
+      <div class="welcome-text">Welcome to my web page</div>
+      <a
+        href="https://www.pexels.com/photo/scenic-view-of-mountain-during-evening-2085998/"
+        class="source"
+      >
+        Image source</a
+      >
     </div>
 
+    <!-- Top bar-->
 
+    <div class="top" id="topBar">
+      <div class="toggleMode">
+        <input
+          type="checkbox"
+          name="toggle2"
+          class="mobileToggle"
+          id="toggle2"
+          onclick="ThemeToggle()"
+        />
+        <label for="toggle2"></label>
+      </div>
+    </div>
+
+    <!-- Introcution Card -->
     <div class="floating-card">
-        
-    <div class="introduction">
+      <div class="introduction">
         <h2>About me</h2>
-        <p class="text"> 
-            Hi, 
-            I'm Valtteri, a 21-year-old student. 
-            Currently I am studying Information Technology at Tampere University. 
-            I'm interested in programming and have 
-            some experience with languages such as C++, Python, HTML, CSS, JavaScript and MySQL.
-            Feel free to check out my projects below!
+        <p class="text">
+          Hi, I'm Valtteri, a 21-year-old student. Currently I am studying
+          Information Technology at Tampere University. I'm interested in
+          programming and have some experience with languages such as C++,
+          Python, HTML, CSS, JavaScript and MySQL. Feel free to check out my
+          projects below!
         </p>
+      </div>
+
+      <div class="container">
+        <div class="github">
+          <a href="https://www.github.com/vattu11" class="github">
+            <img
+              src="github-mark/github-mark-white.png"
+              alt="github"
+              class="logo1"
+            />
+            <img src="github-mark/github-mark.png" alt="github" class="logo2" />
+          </a>
+        </div>
+
+        <div class="skills">
+          <p>Skills</p>
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+            alt="cplusplus"
+            width="40"
+            height="40"
+          />
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+            alt="css3"
+            width="40"
+            height="40"
+          />
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+            alt="html5"
+            width="40"
+            height="40"
+          />
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+            alt="java"
+            width="40"
+            height="40"
+          />
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+            alt="javascript"
+            width="40"
+            height="40"
+          />
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+            alt="mysql"
+            width="40"
+            height="40"
+          />
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+            alt="python"
+            width="40"
+            height="40"
+          />
+        </div>
+      </div>
     </div>
 
-        <a href="https://www.github.com/vattu11" class="github">
-            <img src="github-mark/github-mark-white.png" alt="github" class="logo1">
-            <img src="github-mark/github-mark.png" alt="github" class="logo2">
-        </a>
-
-    </div>
+    <!-- Projects -->
 
     <h4>Projects</h4>
-    
-    <div class="boxes">
-        <div class="row">
-    
-            <a href="https://github.com/vattu11/Teatteri-tiedoston-haku-ohjelma" class="projectlink">
-        
-                    Theatre search program made with C++ 🎭
-            </a>
-    
-            <a href="https://github.com/vattu11/Tammi-peli" class="projectlink">
 
-                    Checkers game made with C++ 🧩
-
-            </a>
-    
-            <a href="weather.html" class="projectlink">
-
-                    Weather app made with HTML, CSS and JavaScript 🌤️
-
-            </a>
-    
-            <a href="https://github.com/vattu11/TicTacToe" class="projectlink">
-
-                    Tic Tac Toe game made with Python 🎮
-            </a>
-            <a href="scroller/scroller.html" class="projectlink">
-
-               Food image scroller made with HTML, CSS and JavaScript 🍔
+    <div class="projects-row">
+      <div class="project" style="background-image: url('images/theatre.jpg')">
+        <a
+          href="https://github.com/vattu11/Teatteri-tiedoston-haku-ohjelma"
+          class="project-link"
+        >
+          <div class="project-text">Theatre search program made with C++</div>
         </a>
-        </div>
+      </div>
+
+      <div class="project" style="background-image: url('images/checkers.jpg')">
+        <a href="https://github.com/vattu11/Tammi-peli" class="project-link">
+          <div class="project-text">Checkers made with C++</div>
+        </a>
+      </div>
+
+      <div class="project" style="background-image: url('images/weather.jpg')">
+        <a href="weather.html" class="project-link">
+          <div class="project-text">Weather app made with JS</div>
+        </a>
+      </div>
+
+      <div class="project" style="background-image: url('images/burger.jpg')">
+        <a href="scroller/scroller.html" class="project-link">
+          <div class="project-text">Food image scroller made with JS</div>
+        </a>
+      </div>
+
+      <div
+        class="project"
+        style="background-image: url('images/tictactoe.jpg')"
+      >
+        <a href="https://github.com/vattu11/TicTacToe" class="project-link">
+          <div class="project-text">Tic-tac-toe game made with python</div>
+        </a>
+      </div>
     </div>
 
+    <script src="script.js"></script>
 
+    <!-- Scrolling script when scrolling from welcome banner-->
+    <script>
+      let lastScrollY = window.scrollY;
 
+      document.addEventListener("scroll", function () {
+        const welcomeBanner = document.querySelector(".welcome-banner");
+        const topBar = document.getElementById("topBar");
+        const scrollThreshold = welcomeBanner.offsetHeight / 40;
 
+        if (
+          window.scrollY > scrollThreshold &&
+          window.scrollY > lastScrollY &&
+          window.scrollY < topBar.offsetTop
+        ) {
+          // Scrolling down
+          window.scrollTo({
+            top: topBar.offsetTop,
+            behavior: "smooth",
+          });
+        } else if (
+          window.scrollY < lastScrollY &&
+          window.scrollY < topBar.offsetTop
+        ) {
+          // Scrolling up
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }
 
+        lastScrollY = window.scrollY;
+      });
+    </script>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const projects = document.querySelectorAll(".project");
+        const titles = document.querySelectorAll("h4");
 
-<script src="script.js"></script>
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("fade-in");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          }
+        );
 
-</body>
+        projects.forEach((project) => {
+          observer.observe(project);
+        });
+
+        titles.forEach((title) => {
+          observer.observe(title);
+        });
+      });
+    </script>
+  </body>
 </html>
