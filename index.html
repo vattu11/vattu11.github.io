@@ -67,6 +67,7 @@
 
       <div class="container">
         <div class="github">
+            <p>GitHub</p>
           <a href="https://www.github.com/vattu11" class="github">
             <img
               src="github-mark/github-mark-white.png"
@@ -171,36 +172,54 @@
 
     <!-- Scrolling script when scrolling from welcome banner-->
     <script>
+    document.addEventListener("DOMContentLoaded", function () {
       let lastScrollY = window.scrollY;
 
-      document.addEventListener("scroll", function () {
+      function debounce(func, wait) {
+        let timeout;
+        return function (...args) {
+          const context = this;
+          clearTimeout(timeout);
+          timeout = setTimeout(() => func.apply(context, args), wait);
+        };
+      }
+
+      function handleScroll() {
         const welcomeBanner = document.querySelector(".welcome-banner");
         const topBar = document.getElementById("topBar");
-        const scrollThreshold = welcomeBanner.offsetHeight / 40;
 
-        if (
-          window.scrollY > scrollThreshold &&
-          window.scrollY > lastScrollY &&
-          window.scrollY < topBar.offsetTop
-        ) {
-          // Scrolling down
-          window.scrollTo({
-            top: topBar.offsetTop,
-            behavior: "smooth",
-          });
-        } else if (
-          window.scrollY < lastScrollY &&
-          window.scrollY < topBar.offsetTop
-        ) {
-          // Scrolling up
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
+        if (welcomeBanner && topBar) {
+          const scrollThreshold = welcomeBanner.offsetHeight / 40;
+
+          if (
+            window.scrollY > scrollThreshold &&
+            window.scrollY > lastScrollY &&
+            window.scrollY < topBar.offsetTop
+          ) {
+            // Scrolling down
+            window.scrollTo({
+              top: topBar.offsetTop,
+              behavior: "smooth",
+            });
+          } else if (
+            window.scrollY < lastScrollY &&
+            window.scrollY < topBar.offsetTop
+          ) {
+            // Scrolling up
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          }
+
+          lastScrollY = window.scrollY;
         }
+      }
 
-        lastScrollY = window.scrollY;
-      });
+      const debouncedHandleScroll = debounce(handleScroll, 100);
+
+      document.addEventListener("scroll", debouncedHandleScroll);
+    });
     </script>
 
     <script>
