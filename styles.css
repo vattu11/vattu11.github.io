@@ -5,6 +5,18 @@ body {
   padding: 0;
 }
 
+.scroll-container {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.welcome-banner, .top {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+
 /* Welcome banner styling  (Welcome text)*/
 
 .banner-img {
@@ -68,31 +80,6 @@ body {
   transform: scaleX(1);
 }
 
-.triangle_down1 {
-  position: absolute;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  border-right: 0.2em solid rgb(255, 255, 255);
-  border-top: 0.2em solid rgb(255, 255, 255);
-  transform: rotate(135deg);
-  margin-right: 0.5em;
-  margin-left: 1em;
-  top: 80%;
-  left: 47.5%;
-  animation: grow 1.5s infinite ease-in-out alternate;
-  transform: translate(-50%, -50%);
-}
-
-/* Arrow animations */
-@keyframes grow {
-  from {
-    transform: scale(1) rotate(135deg);
-  }
-  to {
-    transform: scale(1.2) rotate(135deg);
-  }
-}
 
 /* Top navigation bar where dark/light mode toggle is */
 
@@ -132,9 +119,6 @@ body {
 
 .container {
   display: flex;
-  align-items: center;
-  top: 50%;
-  width: 100%;
 }
 
 .skills {
@@ -160,13 +144,25 @@ body {
 
 .github {
   z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3%;
+  display: flex;
   justify-content: center;
-  width: fit-content;
+  align-items: center;
+  flex-direction: column;
+}
+
+.github p {
+  color: black;
+  font-size: 1.5rem;
+  font-family: "Teachers", sans-serif;
+  text-align: center;
 }
 
 .github .logo1,
 .github .logo2 {
-  width: 6rem;
+  width: 3rem;
   height: auto;
 }
 
@@ -372,7 +368,7 @@ h4 {
   box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 0px 0 hsla(0, 0%, 0%, 0.04),
     0 4px 9px hsla(0, 0%, 0%, 0.13), 0 3px 3px hsla(0, 0%, 0%, 0.05);
   transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
-  background: whitesmoke;
+  background: rgb(117, 117, 117);
   height: 28px;
   width: 28px;
   top: 1px;
@@ -381,7 +377,7 @@ h4 {
 }
 
 .toggleMode input.mobileToggle:checked + label:before {
-  background: rgb(57, 57, 57);
+  background: #2d2d2d;
   transition: width 0.2s cubic-bezier(0, 0, 0, 0.1);
 }
 
@@ -446,4 +442,23 @@ h4 {
   right: -0.3em;
   top: 1em;
   bottom: 1em;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(139, 139, 139, 0.8);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
