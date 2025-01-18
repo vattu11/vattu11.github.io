@@ -15,18 +15,37 @@
       href="https://fonts.bunny.net/css?family=golos-text:400"
       rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/backgroundtext.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css/button.css">
+
+    <link rel="stylesheet" href="css/colortheme.css">
+
+<!--     <link rel="stylesheet" href="css/projects.css"> -->
+
+    <link rel="stylesheet" href="css/bottom.css">
+
+    <link rel="stylesheet" href="css/animations.css">
+
+    <link rel="stylesheet" href="css/box-hover.css">
+
+    <link rel="stylesheet" href="css/filter-cards.css">
 
     <title>Portfolio</title>
   </head>
 
   <body>
+
     <!-- Welcome text and image-->
 
     <div class="welcome-banner" id="welcomeBanner">
-      <img src="images/mountain.jpg" alt="banner" class="banner-img">
-      <a href="#" id="scrollToTopBar" class="welcome-text">Welcome to my web page</a>
-      <a href="https://www.pexels.com/photo/scenic-view-of-mountain-during-evening-2085998/" class="source">Image source</a>
+      <video id="scrollToTopBar" autoplay muted playsinline>
+        <source src="WelcomeAnimation.mp4" type="video/webm">
+        <source src="WelcomeAnimation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
 
     <!-- Top bar-->
@@ -42,121 +61,202 @@
         <label for="toggle2"></label>
       </div>
     </div>
+
+    <!-- Background moving text -->
+
+    <div class="scrolling-background">
+      <div class="text-container" id="text-container-1"></div>
+    </div>
+
+    <div class="scrolling-background">
+      <div class="text-container" id="text-container-2"></div>
+    </div>
+
+    <div class="scrolling-background">
+      <div class="text-container" id="text-container-3"></div>
+    </div>
+
+    <div class="scrolling-background">
+      <div class="text-container" id="text-container-4"></div>
+    </div>
+    <div class="scrolling-background">
+      <div class="text-container" id="text-container-5"></div>
+    </div>
+    <div class="scrolling-background">
+      <div class="text-container" id="text-container-6"></div>
+    </div>
+    <div class="scrolling-background">
+      <div class="text-container" id="text-container-7"></div>
+    </div>
+    <div class="scrolling-background">
+      <div class="text-container" id="text-container-8"></div>
+    </div>
+    <div class="scrolling-background">
+      <div class="text-container" id="text-container-9"></div>
+    </div>
+    <div class="scrolling-background">
+      <div class="text-container" id="text-container-10"></div>
+    </div>
+    <div class="scrolling-background">
+      <div class="text-container" id="text-container-11"></div>
+    </div>
+    <div class="scrolling-background">
+      <div class="text-container" id="text-container-12"></div>
+    </div>
+
     <!-- Introcution Card -->
-    <div class="floating-card">
-      <div class="introduction">
-        <h2>About me</h2>
-        <p class="text">
-          Hi, I'm Valtteri, a 21-year-old student. Currently I am studying
-          Information Technology at Tampere University. I'm interested in
-          programming and have some experience with languages such as C++,
-          Python, HTML, CSS, JavaScript and MySQL. Feel free to check out my
-          projects below!
-        </p>
-      </div>
+    <div class="container">
+      <div class="box">
+        <div class="floating-card">
+          <div class="introduction">
+            <h2>About me</h2>
+            <div class="text">
+              Hi, I'm Valtteri, a 22-year-old student. Currently I
+              am studying
+              Information Technology at Tampere University. I'm
+              interested in
+              programming and have some experience with languages
+              such as C++,
+              Python, HTML, CSS, JavaScript and MySQL. Feel free
+              to check out my
+              projects below!
+            </div>
+          </div>
+          <div class="containers">
+            <div class="github">
+              <p>GitHub</p>
+              <a href="https://www.github.com/vattu11"
+                class="github">
+                <img
+                  src="github-mark/github-mark-white.png"
+                  alt="github"
+                  class="logo1">
+                <img
+                  src="github-mark/github-mark.png"
+                  alt="github"
+                  class="logo2">
+              </a>
+            </div>
 
-      <div class="container">
-        <div class="github">
-          <p>GitHub</p>
-          <a href="https://www.github.com/vattu11" class="github">
-            <img
-              src="github-mark/github-mark-white.png"
-              alt="github"
-              class="logo1">
-            <img src="github-mark/github-mark.png" alt="github" class="logo2">
-          </a>
-        </div>
-
-        <div class="skills">
-          <p>Skills</p>
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
-            alt="cplusplus"
-            width="40"
-            height="40">
-          <img
-            src="https://images.squarespace-cdn.com/content/v1/659d3aa77ec9d540e4791f9a/1705319781899-WBR0BHLOGCJ6HR77SSUI/Git-Logo-1788C.png"
-            alt="gitversioncontrol"
-            width="40"
-            height="40"
-            <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-            alt="css3"
-            width="40"
-            height="40">
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-            alt="html5"
-            width="40"
-            height="40">
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
-            alt="java"
-            width="40"
-            height="40">
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-            alt="javascript"
-            width="40"
-            height="40">
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-            alt="mysql"
-            width="40"
-            height="40">
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-            alt="python"
-            width="40"
-            height="40">
+            <div class="skills">
+              <p>Skills</p>
+              <a href="https://skillicons.dev">
+                <img class="skill-image"
+                  src="https://skillicons.dev/icons?i=git,cpp,java,js,py,css,html,mysql" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- Projects -->
 
     <h4>Projects</h4>
 
-    <div class="projects-row">
-      <div class="project" style="background-image: url('images/theatre.jpg')">
-        <a
-          href="https://github.com/vattu11/Teatteri-tiedoston-haku-ohjelma"
-          class="project-link">
-          <div class="project-text">Theatre search program made with C++</div>
+    <section class="hero-section">
+      <div class="card-grid">
+        <a class="card"
+          href="https://github.com/vattu11/Teatteri-tiedoston-haku-ohjelma">
+          <div class="card__background"
+            style="background-image: url(images/theatre.jpg)"></div>
+          <div class="card__content">
+            <p class="card__category">C++</p>
+            <h3 class="card__heading">Theatre search</h3>
+          </div>
+        </a>
+
+        <a class="card" href="https://github.com/vattu11/Tammi-peli">
+          <div class="card__background"
+            style="background-image: url(images/checkers.jpg)"></div>
+          <div class="card__content">
+            <p class="card__category">C++</p>
+            <h3 class="card__heading">Checkers</h3>
+          </div>
+        </a>
+
+        <a class="card" href="weather.html">
+          <div class="card__background"
+            style="background-image: url(images/weather.jpg)"></div>
+          <div class="card__content">
+            <p class="card__category">JavaScript</p>
+            <h3 class="card__heading">Weather app</h3>
+          </div>
+        </a>
+
+        <a class="card" href="scroller/scroller.html">
+          <div class="card__background"
+            style="background-image: url(images/burger.jpg)"></div>
+          <div class="card__content">
+            <p class="card__category">JavaScript</p>
+            <h3 class="card__heading">Food image scroller</h3>
+          </div>
+        </a>
+
+        <a class="card" href="https://github.com/vattu11/TicTacToe">
+          <div class="card__background"
+            style="background-image: url(images/tictactoe.jpg)"></div>
+          <div class="card__content">
+            <p class="card__category">Python</p>
+            <h3 class="card__heading">Tic-tac-toe game</h3>
+          </div>
         </a>
       </div>
+    </section>
 
-      <div class="project" style="background-image: url('images/checkers.jpg')">
-        <a href="https://github.com/vattu11/Tammi-peli" class="project-link">
-          <div class="project-text">Checkers made with C++</div>
-        </a>
-      </div>
+    <div class="bottom-bar"></div>
 
-      <div class="project" style="background-image: url('images/weather.jpg')">
-        <a href="weather.html" class="project-link">
-          <div class="project-text">Weather app made with JS</div>
-        </a>
-      </div>
+    <!-- Scripts-->
+    <script src="scripts/script.js"></script>
+    <script src="scripts/animations.js"></script>
 
-      <div class="project" style="background-image: url('images/burger.jpg')">
-        <a href="scroller/scroller.html" class="project-link">
-          <div class="project-text">Food image scroller made with JS</div>
-        </a>
-      </div>
+    <script>
+      const words = [
+        "Function", "Algorithm", "Loop", "Variable", "Object", "Array", 
+        "Inheritance", "Class", "Polymorphism", "Encapsulation", "Recursion", 
+        "Abstraction", "Framework", "API", "Library", 
+        "Compilation", "Debugging", "Syntax", "Execution"
+      ];
 
-      <div
-        class="project"
-        style="background-image: url('images/tictactoe.jpg')">
-        <a href="https://github.com/vattu11/TicTacToe" class="project-link">
-          <div class="project-text">Tic-tac-toe game made with python</div>
-        </a>
-      </div>
-    </div>
+      function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
 
-    <script src="script.js"></script>
+        return color;
+      }
 
-    <!-- Scriptsr-->
-    <script src="animations.js"></script>
+      function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      }
+
+      function createTextContainer(containerId) {
+        const container = document.getElementById(containerId);
+        const shuffledWords = shuffleArray([...words]);
+        shuffledWords.forEach(word => {
+          const span = document.createElement('span');
+          span.textContent = word;
+          span.style.color = getRandomColor();
+          container.appendChild(span);
+        });
+      }
+      createTextContainer('text-container-1');
+      createTextContainer('text-container-2');
+      createTextContainer('text-container-3');
+      createTextContainer('text-container-4');
+      createTextContainer('text-container-5')
+      createTextContainer('text-container-6');;
+      createTextContainer('text-container-7');
+      createTextContainer('text-container-8')
+      createTextContainer('text-container-9');;
+      createTextContainer('text-container-10');
+      createTextContainer('text-container-11')
+      createTextContainer('text-container-12');;
+    </script>
 
   </body>
 </html>

@@ -1,0 +1,206 @@
+/* Copyright (c) 2024 by masuwa (https://codepen.io/ma_suwa/pen/eYdZVML)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
+to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+/* Reset */
+:root {
+  --text-color: #000000;
+  --box-shadow-color: #cccccc;
+  --box-shadow-inner: #ffffff;
+
+  --box-bg-start: #f0f0f0;
+  --box-bg-mid1: #f8f8f8;
+  --box-bg-mid2: #fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  display: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: var(--background-color);
+}
+
+.box {
+  top: -790px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  border-radius: 20px;
+  width: 60px;
+  height: 60px;
+  background: var(--background-color);
+  box-shadow: 0 0 0 var(--box-shadow-color), 0 0 0 var(--box-shadow-inner),
+    10px 10px 10px var(--box-shadow-color) inset,
+    -10px -10px 10px var(--box-shadow-inner) inset;
+  opacity: 0; 
+  transition: opacity 0.5s ease-in-out; 
+}
+
+.box.animate {
+  opacity: 1; 
+  animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.floating-card {
+  opacity: 0; 
+  transition: opacity 2s ease-in-out; 
+}
+
+.floating-card.animate {
+  opacity: 1; 
+}
+
+@keyframes anime {
+  0% {
+    width: 60px;
+    height: 60px;
+    background: var(--box-bg-start);
+    box-shadow: 0 0 0 var(--box-shadow-color), 0 0 0 var(--box-shadow-inner),
+      10px 10px 10px var(--box-shadow-color) inset,
+      -10px -10px 10px var(--box-shadow-inner) inset;
+  }
+  25% {
+    width: 60px;
+    height: 60px;
+    background: var(--box-bg-mid1);
+    box-shadow: 10px 10px 10px var(--box-shadow-color),
+      10px 10px 10px var(--box-shadow-inner),
+      0 0 0 var(--box-shadow-color) inset, 0 0 0 var(--box-shadow-inner) inset;
+  }
+  50% {
+    width: 60px;
+    height: 240px;
+    background: var(--box-bg-mid1);
+    box-shadow: 10px 10px 10px var(--box-shadow-color),
+      10px 10px 10px var(--box-shadow-inner),
+      0 0 0 var(--box-shadow-color) inset, 0 0 0 var(--box-shadow-inner) inset;
+  }
+  100% {
+    width: 780px;
+    height: 370px;
+    background: var(--box-bg-mid2);
+    box-shadow: 40px 40px 40px var(--box-shadow-color),
+      0 0 0 var(--box-shadow-inner), 0 0 0 var(--box-shadow-color) inset,
+      2px 2px 2px var(--box-shadow-inner) inset;
+  }
+}
+
+/* Floating Card - Initially Hidden */
+.floating-card {
+  margin-top: 20px;
+  opacity: 0;
+  max-width: fit-content;
+  margin-inline: auto;
+  width: 40rem;
+  background-color: var(--floating-card-bg);
+  color: var(--floating-card-color);
+  opacity: 0; 
+  transition: opacity 2s ease-in-out; 
+}
+/* Animation Class for Floating Card */
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* About me card */
+
+.introduction h2 {
+  color: rgb(0, 0, 0);
+  font-size: 150%;
+  font-family: "Teachers", sans-serif;
+  padding-top: 1.5%;;
+}
+
+.introduction .text {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  line-height: 1.6;
+  font-size: 120%;
+  font-family: "Golos Text", sans-serif;
+}
+
+/*  Shows the images of the skills like C++, Python logos */
+
+.containers {
+  display: flex;
+  margin-top: 50px;
+}
+
+.skills {
+  z-index: 1;
+  margin-left: auto;
+  margin-right: 2rem;
+  margin-top: -3%;
+  text-align: center;
+}
+
+.skills p {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Teachers", sans-serif;
+}
+
+/* GIthub logo and link */
+
+.github {
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.github p {
+  color: black;
+  font-size: 1.5rem;
+  font-family: "Teachers", sans-serif;
+  text-align: center;
+}
+
+.github .logo1,
+.github .logo2 {
+  width: 3rem;
+  height: auto;
+}
+
+h3 {
+  color: black;
+  font-family: "Teachers", sans-serif;
+}
+
+h4 {
+  font-family: "Teachers", sans-serif;
+  font-size: 400%;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: -70vh;
+}

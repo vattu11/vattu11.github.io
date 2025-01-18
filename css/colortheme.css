@@ -1,0 +1,69 @@
+/* Dark Mode Variables */
+.dark-mode {
+    --text-color: #ffffff;
+    --box-shadow-color: #555555;
+    --box-shadow-inner: #212121;
+    --floating-card-bg: rgb(29, 29, 29);
+
+
+    /* Animation Colors for Dark Mode */
+    --box-bg-start: rgb(29, 29, 29);
+    --box-bg-mid1: rgb(29, 29, 29);
+    --box-bg-mid2: rgb(29, 29, 29);
+
+}
+
+/* Dark and light mode stylnigs*/
+
+.dark-mode {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.light-mode {
+  color: var(--text-color);
+}
+
+.dark-mode .github p {
+  color: var(--text-color);
+}
+
+.dark-mode .introduction .text,
+.dark-mode .introduction h2,
+.dark-mode .floating-card,
+.dark-mode .skills p,
+.dark-mode .containers{
+  color: var(--text-color);
+  background-color: rgb(29, 29, 29);
+}
+
+
+
+.dark-mode .top {
+  background-color: rgb(37, 43, 47);
+}
+
+.logo1 {
+  display: none;
+}
+
+.dark-mode .logo2 {
+  background-color: transparent;
+  display: none;
+}
+
+.dark-mode .logo1 {
+  display: flex;
+}
+
+
+
+.dark-mode .floating-card::before,
+.dark-mode .floating-card::after {
+  background: var(--background-color);
+}
+
+.dark-mode .floating-card .introduction {
+  color: var(--text-color);
+}
+
