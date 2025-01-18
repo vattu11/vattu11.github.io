@@ -8,6 +8,11 @@ body {
 	height: 100%;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+
 body.dark-mode {
   background: linear-gradient(-45deg, #272727, #1f1f1f);
   background-size: 400% 400%;
